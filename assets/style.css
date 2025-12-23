@@ -43,10 +43,11 @@ body {
 }
 
 #home-content {
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 5%;
 }
 
 .intro-rectangles {
