@@ -4,6 +4,7 @@
     <title>Preye's Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="assets/panels.js" defer></script>
 </head>
 <body>
     
@@ -13,34 +14,37 @@
             <div id="home-content">
                 <!--Mini me blurred avatar-->
                 <img src="assets/icons/avatar.png" width="15%">
+
                 <!--Introducing me-->
                 <h1 style="margin-top: 1%; color: #081C15"><span style="font-weight: 100; color: black">Hi, I'm </span>Preye Igoniderigha</h1>
+                
                 <!--Rounded rectangles row-->
                 <div style="display: flex; justify-content: center; gap: 5%; margin-top: 2%">
                     <div class="intro-rectangles">CS Student @UCalgary</div>
                     <div class="intro-rectangles">Welcome to my portfolio</div>
                     <div class="intro-rectangles">Developer • Data • Security</div>
                 </div>
+
                 <!--Navigation row-->
                 <div style="display: flex; justify-content: center; gap: 17%; margin-top: 5%">
                     <div class="nav-column">
-                        <a><img src="assets/icons/At sign.png" width="80px"></a>
+                        <a onClick="openPanel('about-me-panel', 'about-me-content', 'about-me.html')"><img src="assets/icons/At sign.png" width="80px"></a>
                         <h3 style="white-space: nowrap;">About me</h3>
                     </div>
                     <div class="nav-column">
-                        <a><img src="assets/icons/Briefcase.png" width="80px"></a>
+                        <a onClick="openPanel('experiences-panel', 'experiences-content', 'experiences.html')"><img src="assets/icons/Briefcase.png" width="80px"></a>
                         <h3>Experiences</h3>
                     </div>
                     <div class="nav-column">
-                        <a><img src="assets/icons/Hard drive.png" width="80px"></a>
+                        <a onClick="openPanel('projects-panel', 'projects-content', 'projects.html')"><img src="assets/icons/Hard drive.png" width="80px"></a>
                         <h3>Projects</h3>
                     </div>
                     <div class="nav-column">
-                        <a><img src="assets/icons/Grid.png" width="80px"></a>
+                        <a onClick="openPanel('skills-panel', 'skills-content', 'skills.html')"><img src="assets/icons/Grid.png" width="80px"></a>
                         <h3>Skills</h3>
                     </div>
                     <div class="nav-column">
-                        <a><img src="assets/icons/Paperclip.png" width="80px"></a>
+                        <a onClick="openPanel('contact-panel', 'contact-content', 'contact.html')"><img src="assets/icons/Paperclip.png" width="80px"></a>
                         <h3>Contact</h3>
                     </div>
                 </div>
@@ -49,6 +53,7 @@
         </div>
     </div>
 
+    <!--Bottom links-->
     <div id="bottom">
         <div class="row">
             <a href="https://www.linkedin.com/in/preye-igoniderigha/" target="_blank"><img src="assets/icons/Linkedin-logo.png" class="footer-logo" id="test"></a>
@@ -56,6 +61,54 @@
             <a href="https://github.com/Preyei" target="_blank"><img src="assets/icons/Github-logo.png" class="footer-logo"></a>
         </div>
     </div>
+
+    <!--PANELS-->
+    
+    <!--About Me panel-->
+    <div id="about-me-panel">
+        <div id="about-me-header">
+            <span class="panel-title">About Me</span>
+            <span class="close-panel close-btn">✕</span>
+        </div>
+        <div id="about-me-content"></div>
+    </div>
+
+    <!--Experiences panel-->
+    <div id="experiences-panel">
+        <div id="experiences-header">
+            <span class="panel-title">Experiences</span>
+            <span class="close-panel close-btn">✕</span>
+        </div>
+        <div id="experiences-content"></div>
+    </div>
+
+    <!--Projects panel-->
+    <div id="projects-panel">
+        <div id="projects-header">
+            <span class="panel-title">Projects</span>
+            <span class="close-panel close-btn">✕</span>
+        </div>
+        <div id="projects-content"></div>
+    </div>
+
+    <!--Skills panel-->
+    <div id="skills-panel">
+        <div id="skills-header">
+            <span class="panel-title">Skills</span>
+            <span class="close-panel close-btn">✕</span>
+        </div>
+        <div id="skills-content"></div>
+    </div>
+
+    <!--Contact panel-->
+    <div id="contact-panel">
+        <div id="contact-header">
+            <span class="panel-title">Contact</span>
+            <span class="close-panel close-btn">✕</span>
+        </div>
+        <div id="contact-content"></div>
+    </div>
+
 
 </body>
 </html>
