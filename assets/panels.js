@@ -8,8 +8,26 @@ function openPanel(panelId, contentId, file) {
             document.getElementById(contentId).innerHTML = html;
             const panel = document.getElementById(panelId);
             panel.style.display = "block";
-            panel.style.left = "50px";   // optional reset
-            panel.style.top = "50px";    // optional reset
+            if (panelId === "about-me-panel") {
+                panel.style.left = "40vw";
+                panel.style.top = "10vh";
+            }
+            else if (panelId === "experiences-panel") {
+                panel.style.left = "40vw";
+                panel.style.top = "60vh";
+            }
+            else if (panelId === "projects-panel") {
+                panel.style.left = "10vw";
+                panel.style.top = "10vh";
+            }
+            else if (panelId === "skills-panel") {
+                panel.style.left = "60vw";
+                panel.style.top = "10vh";
+            }
+            else {
+                panel.style.left = "70vw";
+                panel.style.top = "60vh";
+            }
         });
 }
 
@@ -35,8 +53,17 @@ function makePanelDraggable(panelId, headerId) {
 
     document.addEventListener("mousemove", (e) => {
         if (isDragging) {
-            panel.style.left = (e.clientX - offsetX) + "px";
-            panel.style.top = (e.clientY - offsetY) + "px";
+            let newLeft = e.clientX - offsetX;
+            let newTop = e.clientY - offsetY;
+
+            const maxLeft = window.innerWidth - panel.offsetWidth;
+            const maxTop = window.innerHeight - panel.offsetHeight;
+
+            newLeft = Math.max(0, Math.min(newLeft, maxLeft));
+            newTop = Math.max(0, Math.min(newTop, maxTop));
+
+            panel.style.left = newLeft + "px";
+            panel.style.top = newTop + "px";
         }
     });
 
