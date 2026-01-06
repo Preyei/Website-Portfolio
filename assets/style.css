@@ -122,14 +122,13 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
 }
 
 .about-me-wrapper {
     margin: 1vw;
-    padding-top: 1.5vw;
 }
 
 
@@ -169,6 +168,7 @@ body {
 /* CSS for projects panel*/
 #projects-panel {
     width: 50vw;
+    aspect-ratio: 10/7;
     background-color:#FFFDF6;
     border-style: solid;
     border-color: black;
@@ -178,6 +178,7 @@ body {
     z-index: 200;
     position: fixed;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 #projects-header {
@@ -192,19 +193,19 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
+    position: relative;
 }
 
 .projects-wrapper {
     margin: 1vw;
-    padding-top: 1.5vw;
+    margin-top: 0;
 }
 
 #projects {
-    margin-top: 4vh;
-    display: flex;
+    margin-top: 1vh;
     align-items: center;
     justify-content: center;
 }
@@ -222,6 +223,7 @@ body {
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
+    margin-top: 3vh;
 }
 
 #projects .main-content {
@@ -249,7 +251,7 @@ body {
     margin-top: 0;
 }
 
-.see-more-btn {
+.see-more-less-btn {
     background-color: #74C69D;
     padding: 1.3%;
     border-style: solid;
@@ -258,7 +260,7 @@ body {
     margin-left: 48%;
 }
 
-.see-more-btn:hover {
+.see-more-less-btn:hover {
     background-color:#B7E4C7;
     cursor:pointer;
 }
@@ -282,10 +284,6 @@ body {
 #projects a:hover {
     color:#74C69D;
     text-decoration: underline;
-}
-
-.hide {
-    opacity: 0;
 }
 
 
@@ -347,14 +345,13 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
 }
 
 .contact-wrapper {
     margin: 1vw;
-    padding-top: 1vw;
 }
 
 .connect-button {

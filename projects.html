@@ -2,6 +2,8 @@
     <h3 style="font-weight:600; font-size: larger">What I've Built</h3>
 
     <div id="projects">
+
+        <!--RUMISEQ-->
         <div class="projects-rectangles">
             <h4>RumiSeq</h4>
             <div class="main-content">
@@ -12,18 +14,108 @@
                     </div>
                     <div style="display: flex; justify-content: center; align-items: center; gap: 5%">
                         <div class="skill-bubble">Biopython</div>
-                        <div class="skill-bubble hide">Javascript</div>
+                        <div class="skill-bubble" style="visibility: hidden;">Javascript</div>
                     </div>
                 </div>
-                <div class="project-description">
+                <!--See less-->
+                <div class="project-description" id="rumiseq_less">
                     <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p>
                     <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
                         <img src="/assets/icons/gitlab.png" width="5%">
                         <a href="https://gitlab.igem.org/2025/software-tools/ucalgary" target="_blank">Repository</a>
                         <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
-                        <div class="see-more-btn">See more</div>
+                        <div class="see-more-less-btn" onClick="seeMore('rumiseq')">See more</div>
                     </div>
-                    
+                </div>
+                <!--See more-->
+                <div class="project-description" id="rumiseq_more" style="display:none;">
+                    <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p><br>
+                    <p>In order to parse the fasta files and extract the information used to detect conserved regions I had to employ a sorting algorithm within biopython.</p><br>
+                    <p>I developed RumiSeq while working for a research group. It strengthened my ability to work and learn simultaneously. I developed the ability to work autonomously and work with an interdisciplinary team.</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/gitlab.png" width="5%">
+                        <a href="https://gitlab.igem.org/2025/software-tools/ucalgary" target="_blank">Repository</a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
+                        <div class="see-more-less-btn" onClick="seeLess('rumiseq')">See less</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--RUMINO WEBSITE-->
+        <div class="projects-rectangles">
+            <h4>Rumino Website</h4>
+            <div class="main-content">
+                <div class="project-skills">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5%; margin-bottom: 7%;">
+                        <div class="skill-bubble">HTML</div>
+                        <div class="skill-bubble">CSS</div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5%">
+                        <div class="skill-bubble">Javscript</div>
+                        <div class="skill-bubble" style="visibility: hidden;">Javascript</div>
+                    </div>
+                </div>
+                <!--See less-->
+                <div class="project-description" id="rumino_less">
+                    <p>Research website that showcases the research findings, data and journey into the startup Rumino for the iGEM competition.</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/gitlab.png" width="5%">
+                        <a href="https://gitlab.igem.org/2025/ucalgary" target="_blank">Repository</a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
+                        <div class="see-more-less-btn" onClick="seeMore('rumino')">See more</div>
+                    </div>
+                </div>
+                <!--See more-->
+                <div class="project-description" id="rumino_more" style="display:none;">
+                    <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p><br>
+                    <p>In order to parse the fasta files and extract the information used to detect conserved regions I had to employ a sorting algorithm within biopython.</p><br>
+                    <p>I developed RumiSeq while working for a research group. It strengthened my ability to work and learn simultaneously. I developed the ability to work autonomously and work with an interdisciplinary team.</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/gitlab.png" width="5%">
+                        <a href="https://gitlab.igem.org/2025/ucalgary" target="_blank">Repository</a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
+                        <div class="see-more-less-btn" onClick="seeLess('rumino')">See less</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--BOWTIE DESIGNER -->
+        <div class="projects-rectangles">
+            <h4>Bowtie Designer</h4>
+            <div class="main-content">
+                <div class="project-skills">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5%; margin-bottom: 7%;">
+                        <div class="skill-bubble">Python</div>
+                        <div class="skill-bubble">Dash</div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5%">
+                        <div class="skill-bubble">Javascript</div>
+                        <div class="skill-bubble" style="visibility: hidden;">Javascript</div>
+                    </div>
+                </div>
+                <!--See less-->
+                <div class="project-description" id="bowtie_less">
+                    <p>Open source platform that guides a user in designing their own bowtie to perform a hazard analysis on their project.</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/gitlab.png" width="5%">
+                        <a href="https://gitlab.igem.org/2025/software-tools/ucalgary" target="_blank">Repository</a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
+                        <div class="see-more-less-btn" onClick="seeMore('bowtie')">See more</div>
+                    </div>
+                </div>
+                <!--See more-->
+                <div class="project-description" id="bowtie_more" style="display:none;">
+                    <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p><br>
+                    <p>In order to parse the fasta files and extract the information used to detect conserved regions I had to employ a sorting algorithm within biopython.</p><br>
+                    <p>I developed RumiSeq while working for a research group. It strengthened my ability to work and learn simultaneously. I developed the ability to work autonomously and work with an interdisciplinary team.</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/gitlab.png" width="5%">
+                        <a href="https://gitlab.igem.org/2025/software-tools/ucalgary" target="_blank">Repository</a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
+                        <div class="see-more-less-btn" onClick="seeLess('bowtie')">See less</div>
+                    </div>
                 </div>
             </div>
         </div>

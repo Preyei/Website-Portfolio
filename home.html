@@ -111,4 +111,20 @@
 
 
 </body>
+
+<script>
+    function seeMore(name) {
+        var seeLessDiv = document.getElementById(name+'_less');
+        var seeMoreDiv = document.getElementById(name+'_more');
+        seeLessDiv.style.display = "none";
+        seeMoreDiv.style.display = "block";
+    }
+    function seeLess(name) {
+        var seeLessDiv = document.getElementById(name+'_less');
+        var seeMoreDiv = document.getElementById(name+'_more');
+        seeLessDiv.style.display = "block";
+        seeMoreDiv.style.display = "none";
+    }
+</script>
+
 </html>
