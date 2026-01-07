@@ -32,6 +32,10 @@ body {
     font-weight: 900
 }
 
+.hide {
+    visibility: hidden;
+}
+
 /*CSS for Home Tab*/
 .home-screen {
     width: 100%;
@@ -54,15 +58,14 @@ body {
 .intro-rectangles {
     background-color: #D8F3DC;
     width: 17vw;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    padding: 1%;
+    padding: 1.5%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     border-color: #123524;
     border-style: solid;
+    border-width: 2px;
     white-space: nowrap;
     font-size: 110%;
 }
@@ -91,7 +94,7 @@ body {
     background-color:#D8F3DC;
 }
 
-#experiences-content, #skills-content{
+#experiences-content{
     padding: 5%;
 }
 
@@ -168,7 +171,8 @@ body {
 /* CSS for projects panel*/
 #projects-panel {
     width: 50vw;
-    aspect-ratio: 10/7;
+    /*aspect-ratio: 10/6;*/
+    height: 57vh;
     background-color:#FFFDF6;
     border-style: solid;
     border-color: black;
@@ -178,7 +182,6 @@ body {
     z-index: 200;
     position: fixed;
     overflow: hidden;
-    overflow-y: scroll;
 }
 
 #projects-header {
@@ -200,8 +203,11 @@ body {
 }
 
 .projects-wrapper {
-    margin: 1vw;
+    padding: 1vw;
     margin-top: 0;
+    padding-top: 0;
+    height: 50vh;
+    overflow-y: scroll;
 }
 
 #projects {
@@ -289,7 +295,7 @@ body {
 
 /* CSS for skills panel*/
 #skills-panel {
-    width: 28vw;
+    width: 45vw;
     background-color:#FFFDF6;
     border-style: solid;
     border-color: black;
@@ -305,17 +311,68 @@ body {
     background-color:#95D5B2;
     border-bottom-style: solid;
     border-bottom-color: black;
-    padding: 2%;
-    height: 8%;
+    padding: 1.5vh;
+    height: 2vh;
     cursor: grab;
     user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
+}
+
+.skills-wrapper {
+    margin: 1.5vw;
+}
+
+.skills-options {
+    width: 28%;
+    background-color: #D8F3DC;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: black;
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.skills-options:hover {
+    background-color: #52B788;
+    color: white;
+    cursor: pointer;
+}
+
+.skills-row {
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.skills-rect {
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    border-style: solid;
+    border-color: #52B788;
+    border-radius: 5px;
+    border-width: 2px;
+    box-shadow: inset 0px 0px 4px 0px #aaa;
+}
+
+.skills-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    height: 18vh;
+    width: 6vw;
+    text-align: center;
 }
 
 

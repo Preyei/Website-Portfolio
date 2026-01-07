@@ -95,7 +95,7 @@
     <div id="skills-panel">
         <div id="skills-header">
             <span class="panel-title">Skills</span>
-            <img src="assets/icons/X square.png" class="close-panel close-btn" width="6%" style="margin-right: 2%">
+            <img src="assets/icons/X square.png" class="close-panel close-btn" width="3.5%" style="margin-right: 2%">
         </div>
         <div id="skills-content"></div>
     </div>
@@ -107,6 +107,11 @@
             <img src="assets/icons/X square.png" class="close-panel close-btn" width="6%" style="margin-right: 1vw">
         </div>
         <div id="contact-content"></div>
+    </div>
+
+    <div style="position: absolute; bottom: 0; left: 0;">
+        <p style="margin: 0">Icons sourced from <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">
+            <span style="color: darkgreen; text-decoration: underline darkgreen">Icons8</span></a>.</p>
     </div>
 
 
@@ -124,6 +129,26 @@
         var seeMoreDiv = document.getElementById(name+'_more');
         seeLessDiv.style.display = "block";
         seeMoreDiv.style.display = "none";
+    }
+    function openSkills(name) {
+        programmingSkills = document.getElementById('programming-skills');
+        platformSkills = document.getElementById('platform-skills');
+        technicalSkills = document.getElementById('technical-skills');
+        if (name==='programming_skills') {
+            programmingSkills.style.display = "block";
+            platformSkills.style.display = "none";
+            technicalSkills.style.display = "none";
+        }
+        else if (name==='platform_skills') {
+            programmingSkills.style.display = "none";
+            platformSkills.style.display = "block";
+            technicalSkills.style.display = "none";
+        }
+        else {
+            programmingSkills.style.display = "none";
+            platformSkills.style.display = "none";
+            technicalSkills.style.display = "block";
+        }
     }
 </script>
 

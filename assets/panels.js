@@ -21,7 +21,7 @@ function openPanel(panelId, contentId, file) {
                 panel.style.top = "10vh";
             }
             else if (panelId === "skills-panel") {
-                panel.style.left = "60vw";
+                panel.style.left = "50vw";
                 panel.style.top = "10vh";
             }
             else {

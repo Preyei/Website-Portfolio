@@ -1,15 +1,234 @@
-<div class="contact-wrapper">
-    <h2>Contact Me</h2>
+<div class="skills-wrapper">
+    <h3 style="font-weight:600; font-size: larger">What I Bring</h3>
 
-    <p>If you’d like to get in touch, feel free to use any of the options below.</p>
+    <!--PROGRAMMING SKILLS-->
+    <div id="programming-skills">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 5%; margin-top: 5vh; margin-bottom: 5vh">
+            <div class="skills-options" style="background-color: #52B788; color: white">Programming</div>
+            <div class="skills-options" onClick="openSkills('platform_skills')">Tools & Platforms</div>
+            <div class="skills-options" onClick="openSkills('technical_skills')">Technical Knowledge</div>
+        </div>
 
-    <div class="contact-section">
-        <p><strong>Email:</strong> example@email.com</p>
-        <p><strong>Phone:</strong> (555) 123‑4567</p>
+    
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/html.png" width="100%">
+                </div>
+                <span>HTML</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/css.png" width="100%">
+                </div>
+                <span>CSS</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/python.png" width="100%">
+                </div>
+                <span>Python</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/java.png" width="100%">
+                </div>
+                <span>Java</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/c++.png" width="100%">
+                </div>
+                <span>C++</span>
+            </div>
+        </div>
+
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/javascript.png" width="100%">
+                </div>
+                <span>Javascript</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/c-sharp.png" width="100%">
+                </div>
+                <span>C#</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/sql.png" width="100%">
+                </div>
+                <span>SQL</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/pygame.png" width="100%">
+                </div>
+                <span>Pygame</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/biopython.png" width="100%" style="margin-top: 20%;">
+                </div>
+                <span>Biopython</span>
+            </div>
+        </div>
     </div>
 
-    <div class="contact-actions">
-        <a href="mailto:example@email.com" class="contact-btn">Send Email</a>
-        <a href="#" id="close-panel" class="contact-btn close">Close Panel</a>
+
+    <!--TOOLS & PLATFORMS SKILLS-->
+    <div id="platform-skills" style="display: none;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 5%; margin-top: 5vh; margin-bottom: 5vh">
+            <div class="skills-options" onClick="openSkills('programming_skills')">Programming</div>
+            <div class="skills-options" style="background-color: #52B788; color: white">Tools & Platforms</div>
+            <div class="skills-options" onClick="openSkills('technical_skills')">Technical Knowledge</div>
+        </div>
+
+    
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/git.png" width="100%">
+                </div>
+                <span>Git/Gitlab</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/tableau.png" width="100%">
+                </div>
+                <span>Tableau</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/microsoft-office.png" width="100%">
+                </div>
+                <span>MS Office</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/terminal.png" width="100%">
+                </div>
+                <span>Terminal</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/wireshark.png" width="100%">
+                </div>
+                <span>Wireshark</span>
+            </div>
+        </div>
+
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/linux.png" width="100%">
+                </div>
+                <span>Unix/Linux</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/power-bi.png" width="100%">
+                </div>
+                <span>Power BI</span>
+            </div>
+            <div class="skills-col hide">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/sql.png" width="100%">
+                </div>
+                <span>SQL</span>
+            </div>
+            <div class="skills-col hide">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/pygame.png" width="100%">
+                </div>
+                <span>Pygame</span>
+            </div>
+            <div class="skills-col hide">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/biopython.png" width="100%" style="margin-top: 20%;">
+                </div>
+                <span>Biopython</span>
+            </div>
+        </div>
     </div>
+
+
+    <!--TECHNICAL KNOWLEDGE SKILLS-->
+    <div id="technical-skills" style="display: none">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 5%; margin-top: 5vh; margin-bottom: 5vh">
+            <div class="skills-options" onClick="openSkills('programming_skills')">Programming</div>
+            <div class="skills-options" onClick="openSkills('platform_skills')">Tools & Platforms</div>
+            <div class="skills-options" style="background-color: #52B788; color: white">Technical Knowledge</div>
+        </div>
+
+    
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/debugging.png" width="100%">
+                </div>
+                <span>Debugging</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/unit-testing.png" width="100%">
+                </div>
+                <span>Unit Testing</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/version-control.png" width="100%">
+                </div>
+                <span>Version <br> Control</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/cleaning.png" width="100%">
+                </div>
+                <span>Data <br> Cleaning</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/threat.png" width="100%">
+                </div>
+                <span>Threat <br> Modeling</span>
+            </div>
+        </div>
+
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/writing.png" width="100%">
+                </div>
+                <span>Technical <br> Writing</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/security.png" width="100%">
+                </div>
+                <span>Security <br> Practices</span>
+            </div>
+            <div class="skills-col">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/data-viz.png" width="100%">
+                </div>
+                <span>Information <br> Graphics</span>
+            </div>
+            <div class="skills-col hide">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/pygame.png" width="100%">
+                </div>
+                <span>Pygame</span>
+            </div>
+            <div class="skills-col hide">
+                <div class="skills-rect">
+                    <img src="/assets/skills-icons/biopython.png" width="100%" style="margin-top: 20%;">
+                </div>
+                <span>Biopython</span>
+            </div>
+        </div>
+    </div>
+    
 </div>
