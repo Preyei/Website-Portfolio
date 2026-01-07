@@ -58,7 +58,7 @@ body {
 .intro-rectangles {
     background-color: #D8F3DC;
     width: 17vw;
-    padding: 1.5%;
+    padding: 0.7vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,15 +67,15 @@ body {
     border-style: solid;
     border-width: 2px;
     white-space: nowrap;
-    font-size: 110%;
+    font-size: 1vw;
 }
 
 .nav-column {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    width: 5vw;
 }
 
 .nav-column a:hover {
