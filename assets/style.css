@@ -134,7 +134,7 @@ body {
 
 /* CSS for experiences panel*/
 #experiences-panel {
-    width: 50vw;
+    width: 55vw;
     background-color:#FFFDF6;
     border-style: solid;
     border-color: black;
@@ -185,6 +185,23 @@ body {
     width: 20vw;
     height: 32vh;
     padding: 1vh;
+}
+
+.work-logos {
+    height: 5vw;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background p {
+    margin: 0;
+    font-size: 0.9vw;
+}
+
+.background ul {
+    font-size: 0.9vw;
 }
 
 .clubs {
