@@ -94,10 +94,6 @@ body {
     background-color:#D8F3DC;
 }
 
-#experiences-content{
-    padding: 5%;
-}
-
 
 /* CSS for about me panel*/
 #about-me-panel {
@@ -138,7 +134,7 @@ body {
 
 /* CSS for experiences panel*/
 #experiences-panel {
-    width: 28vw;
+    width: 50vw;
     background-color:#FFFDF6;
     border-style: solid;
     border-color: black;
@@ -154,17 +150,66 @@ body {
     background-color:#95D5B2;
     border-bottom-style: solid;
     border-bottom-color: black;
-    padding: 2%;
-    height: 8%;
+    padding: 1.5vh;
+    height: 2vh;
     cursor: grab;
     user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
+}
+
+.experiences-wrapper {
+    margin: 1.5vw;
+}
+
+.background {
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-bottom: 5vh;
+}
+
+.experience-rect {
+    background-color: #D8F3DC;
+    border-style: solid;
+    border-color: #95D5B2;
+    border-radius: 15px;
+    width: 20vw;
+    height: 32vh;
+    padding: 1vh;
+}
+
+.clubs {
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+.club-boxes {
+    width: 20vw;
+    /*height: 15vh;*/
+    background-color: #CBF7CE;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.clubs p {
+    margin: 0;
+    font-size: 0.9vw;
 }
 
 

@@ -13,8 +13,8 @@ function openPanel(panelId, contentId, file) {
                 panel.style.top = "10vh";
             }
             else if (panelId === "experiences-panel") {
-                panel.style.left = "40vw";
-                panel.style.top = "60vh";
+                panel.style.left = "10vw";
+                panel.style.top = "18vh";
             }
             else if (panelId === "projects-panel") {
                 panel.style.left = "10vw";
