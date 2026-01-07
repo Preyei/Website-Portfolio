@@ -3,6 +3,44 @@
 
     <div id="projects">
 
+        <!--WEBSITE PORTFOLIO -->
+        <div class="projects-rectangles">
+            <h4>Website Portfolio</h4>
+            <div class="main-content">
+                <div class="project-skills">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5%; margin-bottom: 7%;">
+                        <div class="skill-bubble">HTML</div>
+                        <div class="skill-bubble">CSS</div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5%">
+                        <div class="skill-bubble">Javascript</div>
+                        <div class="skill-bubble" style="visibility: hidden;">Javascript</div>
+                    </div>
+                </div>
+                <!--See less-->
+                <div class="project-description" id="portfolio_less">
+                    <p>Personal portfolio website that showcases my personality, skills, experiences and projects that I have completed.</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/Github-logo.png" width="5%">
+                        <a href="https://github.com/Preyei/Website-Portfolio" target="_blank">Repository</a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a> -->
+                        <div class="see-more-less-btn" onClick="seeMore('portfolio')">See more</div>
+                    </div>
+                </div>
+                <!--See more-->
+                <div class="project-description" id="portfolio_more" style="display:none;">
+                    <p>Personal portfolio website that showcases my personality, skills, experiences and projects that I have completed.</p><br>
+                    <p>This website that you are viewing right now is my personal portfolio. I wanted to be able to show my creativity, passion and skills. I designed the website from lo-fi sketches to high-fi interfaces using figma.</p><br>
+                    <p>I hope you are enjoying the experience so far! Some cool things about this website is that each panel (experiences, about me, skills, projects and contact) are actually draggable. So you can drag them anywhere on the page. Thank you for taking the time to learn more about me!</p>
+                    <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
+                        <img src="/assets/icons/Github-logo.png" width="5%">
+                        <a href="https://github.com/Preyei/Website-Portfolio" target="_blank">Repository</a>
+                        <div class="see-more-less-btn" onClick="seeLess('portfolio')">See less</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--RUMISEQ-->
         <div class="projects-rectangles">
             <h4>RumiSeq</h4>
@@ -30,7 +68,7 @@
                 <!--See more-->
                 <div class="project-description" id="rumiseq_more" style="display:none;">
                     <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p><br>
-                    <p>In order to parse the fasta files and extract the information used to detect conserved regions I had to employ a sorting algorithm within biopython.</p><br>
+                    <p>The main purpose of RumiSeq is to detect conserved regions across various sequences in fasta files. I utilized biopython to employ a sorting algorithm that I used to extract information used to detect conserved regions. </p><br>
                     <p>I developed RumiSeq while working for a research group. It strengthened my ability to work and learn simultaneously. I developed the ability to work autonomously and work with an interdisciplinary team.</p>
                     <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
                         <img src="/assets/icons/gitlab.png" width="5%">
@@ -68,9 +106,9 @@
                 </div>
                 <!--See more-->
                 <div class="project-description" id="rumino_more" style="display:none;">
-                    <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p><br>
-                    <p>In order to parse the fasta files and extract the information used to detect conserved regions I had to employ a sorting algorithm within biopython.</p><br>
-                    <p>I developed RumiSeq while working for a research group. It strengthened my ability to work and learn simultaneously. I developed the ability to work autonomously and work with an interdisciplinary team.</p>
+                    <p>Research website that showcases the research findings, data and journey into the startup Rumino for the iGEM competition.</p><br>
+                    <p>As the software development lead in my iGEM team I spearheaded the development of our website that compiled all the research we had done throughout the course of 6 months.</p><br>
+                    <p>The Rumino website is hosted on the iGEM servers and is dynamic and responsive across various screen sizes. The creation of this website strengthened my ability to manage my time and coordinate communication across different teams.</p>
                     <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
                         <img src="/assets/icons/gitlab.png" width="5%">
                         <a href="https://gitlab.igem.org/2025/ucalgary" target="_blank">Repository</a>
@@ -97,7 +135,7 @@
                 </div>
                 <!--See less-->
                 <div class="project-description" id="bowtie_less">
-                    <p>Open source platform that guides a user in designing their own bowtie to perform a hazard analysis on their project.</p>
+                    <p>Open source platform that guides a user in designing their own bowtie visualization in order to perform a hazard analysis.</p>
                     <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
                         <img src="/assets/icons/gitlab.png" width="5%">
                         <a href="https://gitlab.igem.org/2025/software-tools/ucalgary" target="_blank">Repository</a>
@@ -107,9 +145,9 @@
                 </div>
                 <!--See more-->
                 <div class="project-description" id="bowtie_more" style="display:none;">
-                    <p>Open source bioinformatics tool that aligns and finds conserved regions among multiple sequences using fasta files or manual input.</p><br>
-                    <p>In order to parse the fasta files and extract the information used to detect conserved regions I had to employ a sorting algorithm within biopython.</p><br>
-                    <p>I developed RumiSeq while working for a research group. It strengthened my ability to work and learn simultaneously. I developed the ability to work autonomously and work with an interdisciplinary team.</p>
+                    <p>Open source platform that guides a user in designing their own bowtie visualization in order to perform a hazard analysis.</p><br>
+                    <p>Bowties are essential for providing a visual representation of showing the links between hazards, threats and consequences. For this project I employed UI/UX principles to ensure the web app was user friendly.</p><br>
+                    <p>The bowtie designer was developed in parallel with working with the safety and security team to help achieve their goal of making safety tools accessible. The development of this project strengthened my critical thinking and design skills.</p>
                     <div style="display: flex; align-items: center; bottom: 0; gap: 1%; margin-top: 2vh; margin-left: 23%; font-size: 1.8vh">
                         <img src="/assets/icons/gitlab.png" width="5%">
                         <a href="https://gitlab.igem.org/2025/software-tools/ucalgary" target="_blank">Repository</a>
@@ -119,6 +157,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
     
 </div>
