@@ -5,6 +5,62 @@ body {
   font-family: 'Inter';font-size: 1vw;
 }
 
+/* Fullscreen overlay */
+#mobile-warning {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: #FFFDF6;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered box styled like your .screen */
+.warning-box {
+  width: 70vw;
+  max-width: 500px;
+  background-color: #FFFDF6;
+  border: 3px solid black;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Top bar styled like .screen-top-edge */
+.warning-top-edge {
+  background-color: #95D5B2;
+  border-bottom: 3px solid black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+/* Message area styled like your content sections */
+.warning-content {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+/* Trigger overlay on smaller screens */
+@media screen and (max-width: 1000px) {
+  #mobile-warning {
+    display: flex;
+  }
+
+  /* Hide the rest of the site */
+  body > *:not(#mobile-warning) {
+    display: none;
+  }
+}
+
 .screen {
     border-color: black;
     border-style: solid;
